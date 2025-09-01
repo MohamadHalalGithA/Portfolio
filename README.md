@@ -70,9 +70,12 @@ vercel deploy
 ```
 
 # Use
-### You are free to use this as a portfolio template without creditation. You can fork the repo if you want. Just star the repo please!
+ You are free to use this as a portfolio template without creditation. You can fork the repo if you want. Just **star** the repo please!
 
 # Contact
+```
+Email: mohamadhalal20@gmail.com
+```
 
 
 
