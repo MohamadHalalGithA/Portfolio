@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Github, GlobeIcon, NetworkIcon } from 'lucide-react';
+import { ExternalLink, Github, GlobeIcon } from 'lucide-react';
 import UpLift from '../images/UpLift.png';
 import OttawaR from '../images/Ottawa R.png';
 import MyTravel from '../images/MyTravelPal.png';
