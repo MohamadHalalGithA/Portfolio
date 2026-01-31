@@ -12,7 +12,7 @@ const Resume = () => {
   const workExperience = [
     {
       id: 'Websiteous',
-      period: 'JAN 2025 - PRESENT',
+      period: 'DEC 2023 - JUN 2025',
       company: 'Websiteous',
       location: 'Ottawa, ON',
       workType: 'Remote work',
@@ -28,28 +28,21 @@ const Resume = () => {
       technologies: ['Wordpress', 'PHP', 'TypeScript', 'Node', 'React', 'Tailwind CSS', 'Next.js', 'Elementor', 'GROQ', 'Slack']
     },
     {
-      id: 'code',
-      period: 'SEP 2022 - FEB 2023',
-      company: 'Coder Sports Academy',
+      id: 'superleague',
+      period: 'MAR 2023 - DEC 2023',
+      company: 'Super League Ottawa',
       workType: 'Remote work',
-      role: 'Coder Coach',
+      role: 'Web Developer',
       description: [
-        'Mentored many students in Python and Java programming, fostering problem-solving skills and coding best practices through personalized guidance and project-based learning.',
-        'Created project templates and coding exercises to enhance student engagement and practical understanding of programming concepts, leading to improved learning outcomes.',
-        'Provided constructive feedback on code quality, design patterns, and algorithm efficiency, helping students refine their coding skills and prepare for technical interviews.',
-        'Facilitated virtual coding workshops and Q&A sessions, promoting a collaborative learning environment and encouraging peer-to-peer support among students.'
-      ],
-      technologies: ['Python', 'Java', 'JavaScript', 'OOP', 'Github']
+       ' Designed, built, and maintained responsive web pages for superleagueottawa.com, improving user navigation, mobile performance, and overall site accessibility for hundreds of monthly visitors.',
+'Developed reusable UI components, optimized layouts, and enhanced page load times using HTML, CSS, JavaScript, and modern frontend frameworks.',
+'Collaborated with league operations staff to implement real-time schedule updates, standings, and registration workflows, ensuring accurate and timely information across all divisions.',
+'Managed version control and iterative site updates through Git-based workflows, improving release consistency and reducing site-related issues reported by users.'],
+  technologies: ['Python', 'JavaScript', 'Github', 'Node', 'React', 'Squarespace']
     }
   ];
 
   const certificates = [
-    {
-      name: 'AWS Certified Developer Associate',
-      issuer: 'Amazon Web Services',
-      date: '2024',
-      description: 'Comprehensive certification covering AWS services, serverless architecture, and cloud development best practices.'
-    },
     {
       name: 'React Professional Certificate',
       issuer: 'Meta',
@@ -57,10 +50,10 @@ const Resume = () => {
       description: 'Advanced React development including hooks, context, performance optimization, and modern React patterns.'
     },
     {
-      name: 'TypeScript Fundamentals',
-      issuer: 'Microsoft',
-      date: '2023',
-      description: 'Type safety, advanced types, generics, and TypeScript integration with modern frameworks.'
+      name: 'Realtime Programming for the QNX Operating System',
+      issuer: 'QNX',
+      date: 'Ongoing',
+      description: 'Learning and applying principles of real-time programming for embedded systems using the QNX operating system.'
     }
   ];
 
