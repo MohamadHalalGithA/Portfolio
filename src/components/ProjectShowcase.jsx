@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, GlobeIcon, NetworkIcon } from 'lucide-react';
 import UpLift from '../images/UpLift.png';
 import OttawaR from '../images/Ottawa R.png';
 import MyTravel from '../images/MyTravelPal.png';
-import AdamExpress from '../images/AdamExpress.png';
+import CBackend from '../images/CB.png';
 
 const ProjectShowcase = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -11,6 +11,16 @@ const ProjectShowcase = () => {
   const containerRef = useRef(null);
 
   const projects = [
+     {
+      id: 'C',
+      title: 'C Backend System for Crypto Managment Portfolio ',
+      description: ' Built HTTP backend in C using sockets/pthreads, managing API requests without frameworks. Implemented JSON parsing for data handling and SQLite for persistent storage. Developed RESTful endpoints for CRUD operations on crypto portfolios, ensuring efficient data management and retrieval.',
+      tags: ['C', 'Sockets', 'Pthreads', 'JSON Parsing', 'SQLite', 'RESTful API', 'HTTP', 'React'],
+      website: null,
+      github: "https://github.com/MohamadHalalGithA/C-Backend-System-for-Crypto-Managment-Portfolio",
+      image: CBackend,
+      color: 'rgba(147, 51, 234, 0.1)'
+    },
     {
       id: 'UpLift',
       title: 'UpLift Gym App',
@@ -40,16 +50,6 @@ const ProjectShowcase = () => {
       github: 'https://github.com/MohamadHalalGithA/MyTravelPal',
       image: MyTravel,
       color: 'rgba(16, 185, 129, 0.1)'
-    },
-    {
-      id: 'Adam Express',
-      title: 'Adam Express',
-      description: 'A moving company website that showcases their services, provides a booking system, and highlights customer testimonials. The site is designed to be user-friendly and visually appealing, making it easy for potential customers to learn about the company and book their services.',
-      tags: ['Wordpress', 'React.js', 'JavaScript', 'CSS3', 'HTML5', 'PHP', 'SQL', 'Elementor'],
-      website: 'https://adam-express.ca/',
-      github: null,
-      image: AdamExpress,
-      color: 'rgba(147, 51, 234, 0.1)'
     }
   ];
 
@@ -133,15 +133,17 @@ const ProjectShowcase = () => {
                 {/* Hover Overlay */}
                 <div className="project-overlay">
                   <div className="overlay-buttons">
-                    <a 
+                   
+                    {project.website? <a 
                       href={project.website} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="overlay-button website-button"
                     >
-                      <ExternalLink size={20} />
+                      <GlobeIcon size={20} />
                       <span>Website</span>
-                    </a>
+                    </a> : ""}
+                    
                     {project.github ? <a 
                       href={project.github} 
                       target="_blank" 
