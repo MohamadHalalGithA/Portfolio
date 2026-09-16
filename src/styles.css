@@ -675,8 +675,16 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   border: 1px solid var(--border);
+  transition: all 0.2s ease;
+  cursor: default;
 }
 
+.project-tag:hover {
+  background: var(--primary-light);
+  color: white;
+  border-color: var(--primary-light);
+  scale: 1.05;
+}
 /* Mobile buttons used in showcase */
 .mobile-buttons {
   display: none;
