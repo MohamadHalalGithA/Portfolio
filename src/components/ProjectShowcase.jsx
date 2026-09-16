@@ -4,6 +4,7 @@ import UpLift from '../images/UpLift.png';
 import OttawaR from '../images/Ottawa R.png';
 import MyTravel from '../images/MyTravelPal.png';
 import CBackend from '../images/CB.png';
+import Lrzip from '../images/LRZIP.png';
 
 const ProjectShowcase = () => {
   const [activeProject, setActiveProject] = useState(0);
@@ -11,6 +12,27 @@ const ProjectShowcase = () => {
   const containerRef = useRef(null);
 
   const projects = [
+    {
+  id: 'LRZIPWindowsPort',
+  title: 'LRZIP Windows Port',
+  description: 'A native Windows port of LRZIP, a large Linux/POSIX-oriented C/C++ compression utility. The project involved adapting low-level operating-system interfaces, resolving memory-mapping and file-I/O issues, and building a repeatable cross-platform validation workflow that verifies Windows compression and decompression output byte-for-byte against the Linux baseline.',
+  tags: ['C', 'C++', 'Windows', 'Linux', 'POSIX', 'Bash', 'Git', 'Debugging', 'Automated Testing'],
+  website: null,
+  github: 'https://github.com/MohamadHalalGithA/lrzip-Windows-Port',
+  image: Lrzip,
+  color: 'rgba(59, 130, 246, 0.1)'
+},
+    {
+      id: 'MyTravelPal',
+      title: 'MyTravelPal',
+      description: 'A travel planning app that helps users discover destinations. Using a sleek interface, users can search for places, view details, and plan their trips efficiently. The app integrates with various APIs to provide a map view with location markers, making it easy to visualize travel plans.',
+      tags: ['React.js', 'JavaScript', 'CSS3', 'Node.js', 'Express.js', 'RapidAPI', 'Axios'],
+      website: 'https://mytravelpalre.netlify.app/',
+      github: 'https://github.com/MohamadHalalGithA/MyTravelPal',
+      image: MyTravel,
+      color: 'rgba(16, 185, 129, 0.1)'
+    },
+
      {
       id: 'C',
       title: 'C Backend System for Crypto Managment Portfolio ',
@@ -41,16 +63,7 @@ const ProjectShowcase = () => {
       image: OttawaR,
       color: 'rgba(59, 130, 246, 0.1)'
     },
-    {
-      id: 'MyTravelPal',
-      title: 'MyTravelPal',
-      description: 'A travel planning app that helps users discover destinations. Using a sleek interface, users can search for places, view details, and plan their trips efficiently. The app integrates with various APIs to provide a map view with location markers, making it easy to visualize travel plans.',
-      tags: ['React.js', 'JavaScript', 'CSS3', 'Node.js', 'Express.js', 'RapidAPI', 'Axios'],
-      website: 'https://mytravelpalre.netlify.app/',
-      github: 'https://github.com/MohamadHalalGithA/MyTravelPal',
-      image: MyTravel,
-      color: 'rgba(16, 185, 129, 0.1)'
-    }
+    
   ];
 
   useEffect(() => {
