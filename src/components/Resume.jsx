@@ -11,35 +11,44 @@ const Resume = () => {
   
   const workExperience = [
     {
-      id: 'Websiteous',
-      period: 'DEC 2023 - JUN 2025',
-      company: 'Websiteous',
-      location: 'Ottawa, ON',
-      workType: 'Remote work',
-      role: 'Frontend Web Developer',
-      description: [
-        'Architected enterprise-scale, CMS-driven reusable pagebuilder blocks with dynamic configurability using Elementor, enabling non-technical teams to manage content across 6+ production websites. Designed custom schemas and optimized GROQ queries, resulting in 40% faster content delivery.',
-        'Delivered high-performance web applications using Next.js, React, and Tailwind CSS with advanced rendering strategies (SSG/SSR), achieving 25% increase in user engagement and 20% improvement in Core Web Vitals.',
-        'Implemented TypeScript across full-stack codebases, reducing production defects by 15% and establishing type-safe development standards for enhanced code quality and maintainability.',
-        'Enhanced team productivity via a scalable Monorepo architecture (Turborepo) and rigorous peer code reviews, contributing 40+ hours weekly while maintaining high engineering standards.',
-        'Collaborated with cross-functional teams (Design, Product) to ship WCAG 2.1 AA-compliant, user-centered interfaces using Agile methodologies, managing sprints in Linear and coordinating communication via Slack.',
-        'Optimized performance and SEO by implementing lazy loading, strategic code splitting, and adhering to SEO best practices, resulting in higher search rankings and better UX metrics.'
-      ],
-      technologies: ['Wordpress', 'PHP', 'TypeScript', 'Node', 'React', 'Tailwind CSS', 'Next.js', 'Elementor', 'GROQ', 'Slack']
-    },
+  id: 'statcan',
+  period: 'MAY 2026 - SEP 2026',
+  company: 'Statistics Canada',
+  workType: 'On-site work',
+  role: 'Operator, Processing Operations and Census Help Line',
+  description: [
+    'Processed and validated high-volume Census 2026 data while following strict quality, confidentiality, and security procedures.',
+    'Performed structured data validation, analytical review, and quality-control checks to identify incomplete, inconsistent, or inaccurate records.',
+    'Investigated discrepancies and processing issues, resolved routine cases, and escalated more complex problems to the appropriate teams.',
+    'Used internal systems, reference tools, and established procedures to verify information and support accurate census processing.',
+    'Reviewed records for completeness and consistency and documented issues requiring further investigation or correction.',
+  ],
+  technologies: [
+    'Data Validation',
+    'Quality Control',
+    'Analytical Review',
+    'Issue Investigation',
+    'Documentation',
+    'Internal Information Systems',
+    'Process Compliance',
+    'Client Support'
+  ]
+},
     {
-      id: 'superleague',
-      period: 'MAR 2023 - DEC 2023',
-      company: 'Super League Ottawa',
-      workType: 'Remote work',
-      role: 'Web Developer',
-      description: [
-       ' Designed, built, and maintained responsive web pages for superleagueottawa.com, improving user navigation, mobile performance, and overall site accessibility for hundreds of monthly visitors.',
-'Developed reusable UI components, optimized layouts, and enhanced page load times using HTML, CSS, JavaScript, and modern frontend frameworks.',
-'Collaborated with league operations staff to implement real-time schedule updates, standings, and registration workflows, ensuring accurate and timely information across all divisions.',
-'Managed version control and iterative site updates through Git-based workflows, improving release consistency and reducing site-related issues reported by users.'],
-  technologies: ['Python', 'JavaScript', 'Github', 'Node', 'React', 'Squarespace']
-    }
+  id: 'webdeveloper',
+  period: 'DEC 2023 - JUN 2025',
+  company: 'Websiteous',
+  workType: 'Hybrid work',
+  role: 'Web Developer',
+  description: [
+    'Built and maintained responsive website pages and reusable components using Elementor, JavaScript, React, and Next.js.',
+    'Worked with TypeScript, Git, and shared codebases to implement features, fix bugs, and review changes.',
+    'Collaborated with designers and developers to turn requirements and mockups into working web pages and features.',
+    'Improved website performance through image optimization, lazy loading, and general frontend cleanup.',
+    'Updated and maintained existing client websites, including content changes, layout adjustments, and troubleshooting.'
+  ],
+  technologies: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Elementor', 'Git']
+}
   ];
 
   const certificates = [
